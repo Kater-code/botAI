@@ -1,22 +1,24 @@
-# botAI — Telegram Bot with AI
+# botAI — Telegram Bot with GPT Integration
 
-Telegram bot built with Python and aiogram framework.
+Telegram bot with AI responses powered by GPT and a subscription system.
 
 ## Features
-- AI-powered responses via ai_logic handler
-- Subscription management
+- GPT-powered responses for every user message
+- Free trial limit with subscription paywall
+- User database (registration, usage tracking)
 - Modular architecture (handlers / services / database)
 
 ## Stack
 - Python
 - aiogram
+- OpenAI API (GPT)
 - asyncio
 
 ## Structure
 botTG/
-├── handlers/      # Command and message handlers
-├── services/      # Business logic
-├── database/      # Database layer
+├── handlers/      # Message handlers + AI logic
+├── services/      # GPT API integration
+├── database/      # User data & subscription tracking
 ├── bot.py         # Entry point
 └── config.py      # Configuration
 ## Setup
